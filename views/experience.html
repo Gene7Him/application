@@ -1,10 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<include href="views/header.html" xmlns="http://www.w3.org/1999/html"></include>
+
 <body>
 
+<div class="container">
+    <h1>Experience</h1>
+
+
+    <form action="#" method="post" class="form-horizontal">
+
+        <!-- get experience -->
+        <div class="form-group">
+            <label for="bio" class="col-sm-4 control-label">Biography</label>
+            <div class="col-sm-4"><input class="form-control" type="text"
+                                         name="bio" id="bio" ></div>
+
+            <label for="git" class="col-sm-4 control-label">Github Link</label>
+            <div class="col-sm-4"><input class="form-control" type="text"
+                                         name="git" id="git" ></div>
+
+            <div class="col-sm-4">
+                <p>Years Experience</p>
+                <label><input type="radio" name="ex" value="0-2">0-2</label><br>
+                <label><input type="radio" name="ex" value="2-4">2-4</label><br>
+                <label><input type="radio" name="ex" value="4+">4+</label><br>
+            </div>
+
+
+            <div class="col-sm-4">
+                <p>Willing To Relocate</p>
+                <label><input type="radio" name="move" value="yes">Yes</label><br>
+                <label><input type="radio" name="move" value="no">No</label><br>
+                <label><input type="radio" name="move" value="maybe">Maybe</label><br>
+            </div>
+
+        </div>
+        <br>
+
+
+
+        <!-- submit button -->
+        <div class="col-xs-3 ">
+            <button class="btn btn-primary" type="submit">Next</button>
+        </div>
+    </form>
+
+</div>
 </body>
 </html>

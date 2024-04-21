@@ -65,26 +65,36 @@ $f3->route('GET|POST /experience', function($f3) {
     // If the form has been posted
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-        //var_dump($_POST);
         // Get the data from the post array
-        if (isset($_POST['conds']))
-            $condiments = implode(", ", $_POST['conds']);
-        else
-            $condiments = "None selected";
+        $bio = $_POST['bio'];
+        $git = $_POST['git'];
+
+
+
+        if(true) {
+            // Add the data to the session array
+            $f3->set('SESSION.bio', $bio);
+            $f3->set('SESSION.git', $git);
+
+        }
+
+
+            if (isset($_POST['ex']) && $_POST['move'])
+            $ex = implode(", ", $_POST['ex']);
+            $move = implode(", ", $_POST['move']);
+
 
         // If the data valid
         if (true) {
 
             // Add the data to the session array
-            $f3->set('SESSION.condiments', $condiments);
+            $f3->set('SESSION.ex', $ex);
+            $f3->set('SESSION.move', $move);
 
             // Send the user to the next form
-            $f3->reroute('summary');
+            $f3->reroute('mailing');
         }
-        else {
-            // Temporary
-            echo "<p>Validation errors</p>";
-        }
+
     }
 
     // Render a view page
