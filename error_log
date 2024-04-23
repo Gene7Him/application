@@ -1,0 +1,66 @@
+[23-Apr-2024 17:02:08 UTC] Unable to open views/header.html
+[23-Apr-2024 17:02:08 UTC] [328/application/tmp/241tgu6ind7os.1ijm6o6079b5j.php:1] Preview->render()
+[23-Apr-2024 17:02:08 UTC] [328/application/index.php:55] Preview->render()
+[23-Apr-2024 17:02:08 UTC] [328/application/index.php:106] Base->run()
+[23-Apr-2024 17:47:16 UTC] Unable to open views/header.html
+[23-Apr-2024 17:47:16 UTC] [328/application/tmp/241tgu6ind7os.1ijm6o6079b5j.php:1] Preview->render()
+[23-Apr-2024 17:47:16 UTC] [328/application/index.php:55] Preview->render()
+[23-Apr-2024 17:47:16 UTC] [328/application/index.php:106] Base->run()
+[23-Apr-2024 17:47:21 UTC] Unable to open views/header.html
+[23-Apr-2024 17:47:21 UTC] [328/application/tmp/241tgu6ind7os.1ijm6o6079b5j.php:1] Preview->render()
+[23-Apr-2024 17:47:21 UTC] [328/application/index.php:55] Preview->render()
+[23-Apr-2024 17:47:21 UTC] [328/application/index.php:106] Base->run()
+[23-Apr-2024 17:51:54 UTC] implode(): Invalid arguments passed
+[23-Apr-2024 17:51:54 UTC] [328/application/index.php:84] 
+[23-Apr-2024 17:51:54 UTC] [328/application/index.php:84] implode()
+[23-Apr-2024 17:51:54 UTC] [328/application/index.php:106] Base->run()
+[23-Apr-2024 18:13:26 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/genegree/public_html/328/application/index.php on line 119
+[23-Apr-2024 18:13:29 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/genegree/public_html/328/application/index.php on line 119
+[23-Apr-2024 18:13:32 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/genegree/public_html/328/application/index.php on line 119
+[23-Apr-2024 18:14:35 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/genegree/public_html/328/application/index.php on line 119
+[23-Apr-2024 18:15:04 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/genegree/public_html/328/application/index.php on line 119
+[23-Apr-2024 18:15:46 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/genegree/public_html/328/application/index.php on line 119
+[23-Apr-2024 18:17:15 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/genegree/public_html/328/application/index.php on line 117
+[23-Apr-2024 18:18:25 UTC] implode(): Invalid arguments passed
+[23-Apr-2024 18:18:25 UTC] [328/application/index.php:83] 
+[23-Apr-2024 18:18:25 UTC] [328/application/index.php:83] implode()
+[23-Apr-2024 18:18:25 UTC] [328/application/index.php:143] Base->run()
+[23-Apr-2024 18:20:12 UTC] implode(): Invalid arguments passed
+[23-Apr-2024 18:20:12 UTC] [328/application/index.php:83] 
+[23-Apr-2024 18:20:12 UTC] [328/application/index.php:83] implode()
+[23-Apr-2024 18:20:12 UTC] [328/application/index.php:141] Base->run()
+[23-Apr-2024 18:20:23 UTC] implode(): Invalid arguments passed
+[23-Apr-2024 18:20:23 UTC] [328/application/index.php:83] 
+[23-Apr-2024 18:20:23 UTC] [328/application/index.php:83] implode()
+[23-Apr-2024 18:20:23 UTC] [328/application/index.php:141] Base->run()
+[23-Apr-2024 18:20:41 UTC] implode(): Invalid arguments passed
+[23-Apr-2024 18:20:41 UTC] [328/application/index.php:84] 
+[23-Apr-2024 18:20:41 UTC] [328/application/index.php:84] implode()
+[23-Apr-2024 18:20:41 UTC] [328/application/index.php:141] Base->run()
+[23-Apr-2024 18:22:33 UTC] implode(): Invalid arguments passed
+[23-Apr-2024 18:22:33 UTC] [328/application/index.php:84] 
+[23-Apr-2024 18:22:33 UTC] [328/application/index.php:84] implode()
+[23-Apr-2024 18:22:33 UTC] [328/application/index.php:141] Base->run()
+[23-Apr-2024 18:23:16 UTC] implode(): Invalid arguments passed
+[23-Apr-2024 18:23:16 UTC] [328/application/index.php:84] 
+[23-Apr-2024 18:23:16 UTC] [328/application/index.php:84] implode()
+[23-Apr-2024 18:23:16 UTC] [328/application/index.php:141] Base->run()
+[23-Apr-2024 18:25:47 UTC] implode(): Invalid arguments passed
+[23-Apr-2024 18:25:47 UTC] [328/application/index.php:84] 
+[23-Apr-2024 18:25:47 UTC] [328/application/index.php:84] implode()
+[23-Apr-2024 18:25:47 UTC] [328/application/index.php:141] Base->run()
+[23-Apr-2024 18:27:46 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:27:48 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:27:51 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:27:57 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:27:58 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:28:06 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:28:17 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:28:20 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:29:15 UTC] PHP Parse error:  syntax error, unexpected '$view' (T_VARIABLE), expecting ')' in /home/genegree/public_html/328/application/index.php on line 98
+[23-Apr-2024 18:30:44 UTC] HTTP 404 (GET /mailing)
+[23-Apr-2024 18:30:44 UTC] [328/application/index.php:141] Base->run()
+[23-Apr-2024 18:43:33 UTC] HTTP 404 (GET /summary)
+[23-Apr-2024 18:43:33 UTC] [328/application/index.php:141] Base->run()
+[23-Apr-2024 18:49:42 UTC] HTTP 404 (GET /summary)
+[23-Apr-2024 18:49:42 UTC] [328/application/index.php:137] Base->run()
