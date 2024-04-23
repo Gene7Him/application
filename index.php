@@ -102,13 +102,5 @@ $f3->route('GET|POST /experience', function($f3) {
     echo $view->render('views/experience.html');
 });
 
-
-
-
-
-
-
-
-
 // Run Fat-Free
 $f3->run();
