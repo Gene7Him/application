@@ -8,6 +8,8 @@ error_reporting(E_ALL);
 
 // require the autoload file
 require_once('vendor/autoload.php');
+require_once ('model/data-layer.php');
+require_once ('model/validate.php');
 
 // Instantiate the F3 Base Class
 $f3 = Base::instance();
