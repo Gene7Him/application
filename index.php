@@ -130,6 +130,14 @@ $f3->route('GET|POST /mailing', function($f3) {
         }
     }
 
+    // Get the data from the model
+    // and add it to the F3 hive
+    $code = getJobs();
+    $f3->set('code', $code);
+
+    $codes = getVerticles();
+    $f3->set('codes', $codes);
+
     // Render a view page
     $view = new Template();
     echo $view->render('views/mailing.html');

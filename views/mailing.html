@@ -21,8 +21,8 @@
             <label class="col-sm-4 control-label">Software Development Jobs</label>
 
             <div class="col-sm-4">
-                <repeat group="{{ @code }}" value="{{ @code[] }}">
-                    <label><input type="checkbox" name="code[]" value="{{ @code }}"> {{ ucfirst(@code) }}</label><br>
+                <repeat group="{{ @code }}" value="{{ @code }}">
+                    <label><input type="checkbox" name="code" value="{{ @code }}"> {{ @code }}</label><br>
                 </repeat>
 
 
@@ -31,8 +31,8 @@
             <label class="col-sm-4 control-label">Industry Verticals</label>
 
             <div class="col-sm-4">
-                <repeat group="{{ @code }}" value="{{ @code[] }}">
-                    <label><input type="checkbox" name="code[]" value="{{ @code }}"> {{ ucfirst(@code) }}</label><br>
+                <repeat group="{{ @codes }}" value="{{ @codes }}">
+                    <label><input type="radio" name="codes" value="{{ @codes }}"> {{ @codes }}</label><br>
                 </repeat>
 
 
