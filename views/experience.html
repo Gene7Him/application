@@ -25,6 +25,9 @@
             <label for="git" class="col-sm-4 control-label">Github Link</label>
             <div class="col-sm-4"><input class="form-control" type="text"
                                          name="git" id="git" ></div>
+            <check if="{{ isset(@errors['git']) }}">
+                <span class="err">{{ @errors['git'] }}</span>
+            </check>
 
             <div class="col-sm-4">
                 <p>Years Experience</p>
@@ -32,6 +35,9 @@
                 <label><input type="radio" name="ex" value="2-4">2-4</label><br>
                 <label><input type="radio" name="ex" value="4+">4+</label><br>
             </div>
+            <check if="{{ isset(@errors['ex']) }}">
+                <span class="err">{{ @errors['ex'] }}</span>
+            </check>
 
 
             <div class="col-sm-4">

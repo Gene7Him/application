@@ -21,14 +21,10 @@
             <label class="col-sm-4 control-label">Software Development Jobs</label>
 
             <div class="col-sm-4">
-                <label><input type="checkbox" name="code[]" value="JS">Javascript</label><br>
-                <label><input type="checkbox" name="code[]" value="html">HTML</label><br>
-                <label><input type="checkbox" name="code[]" value="php">PHP</label><br>
-                <label><input type="checkbox" name="code[]" value="css">CSS</label><br>
-                <label><input type="checkbox" name="code[]" value="java">Java</label><br>
-                <label><input type="checkbox" name="code[]" value="react">ReactJS</label><br>
-                <label><input type="checkbox" name="code[]" value="python">Python</label><br>
-                <label><input type="checkbox" name="code[]" value="node">NodeJS</label><br>
+                <repeat group="{{ @code }}" value="{{ @code[] }}">
+                    <label><input type="radio" name="code[]" value="{{ @code }}"> {{ ucfirst(@code) }}</label><br>
+                </repeat>
+
 
             </div>
 

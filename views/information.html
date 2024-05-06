@@ -20,18 +20,30 @@
             <label for="fName" class="col-sm-4 control-label">First Name</label>
             <div class="col-sm-4"><input class="form-control" type="text"
                                          name="fName" id="fName" ></div>
+            <check if="{{ isset(@errors['fName']) }}">
+                <span class="err">{{ @errors['fName'] }}</span>
+            </check>
 
             <label for="LName" class="col-sm-4 control-label">Last Name</label>
             <div class="col-sm-4"><input class="form-control" type="text"
                                          name="LName" id="LName" ></div>
+            <check if="{{ isset(@errors['lName']) }}">
+                <span class="err">{{ @errors['lName'] }}</span>
+            </check>
 
             <label for="email" class="col-sm-4 control-label">Email</label>
             <div class="col-sm-4"><input class="form-control" type="text"
                                          name="email" id="email" ></div>
+            <check if="{{ isset(@errors['email']) }}">
+                <span class="err">{{ @errors['email'] }}</span>
+            </check>
 
-            <label for="Phone" class="col-sm-4 control-label">Phone</label>
+            <label for="phone" class="col-sm-4 control-label">Phone</label>
             <div class="col-sm-4"><input class="form-control" type="text"
-                                         name="Phone" id="Phone" ></div>
+                                         name="Phone" id="phone" ></div>
+            <check if="{{ isset(@errors['phone']) }}">
+                <span class="err">{{ @errors['phone'] }}</span>
+            </check>
 
         </div>
         <br>
