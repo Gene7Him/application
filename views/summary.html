@@ -1,5 +1,30 @@
 <body>
 
+<?php
+$applicant = $this->get('applicant');
+?>
+
+<h1>Summary</h1>
+<p>Name: <?= $applicant->getFname() ?> <?= $applicant->getLname() ?></p>
+<p>Email: <?= $applicant->getEmail() ?></p>
+<p>State: <?= $applicant->getState() ?></p>
+<p>Phone: <?= $applicant->getPhone() ?></p>
+<p>GitHub: <?= $applicant->getGithub() ?></p>
+<p>Experience: <?= $applicant->getExperience() ?></p>
+<p>Relocate: <?= $applicant->getRelocate() ?></p>
+<p>Bio: <?= $applicant->getBio() ?></p>
+<?php if ($applicant->getProfilePic()): ?>
+<p>Profile Picture: <img src="<?= $applicant->getProfilePic() ?>" alt="Profile Picture"></p>
+<?php endif; ?>
+
+<?php if ($applicant instanceof Applicant_SubscribedToLists): ?>
+<h2>Mailing Lists</h2>
+<p>Job Announcements: <?= implode(', ', $applicant->getSelectionsJobs()) ?></p>
+<p>Verticals: <?= implode(', ', $applicant->getSelectionsVerticals()) ?></p>
+<?php endif; ?>
+
+
+
 <div class="p-5 mx-3">
     <h4>FaisonIndustries LLC</h4>
     <h4>FullStack Developer Internship</h4>

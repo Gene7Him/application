@@ -13,7 +13,7 @@
     <h1>Personal Information</h1>
 
 
-    <form action="#" method="post" class="form-horizontal">
+    <form action="/process-personal-info" method="post" class="form-horizontal">
 
         <!-- get info -->
         <div class="form-group">
@@ -44,6 +44,15 @@
             <check if="{{ isset(@errors['phone']) }}">
                 <span class="err">{{ @errors['phone'] }}</span>
             </check>
+
+            <label>
+                <input type="checkbox" name="mailing_list" value="yes"> Opt-in to receive job announcements
+            </label>
+            <label>
+                Upload your picture:
+                <input type="file" name="profile_pic" accept="image/png, image/jpeg">
+            </label>
+
 
         </div>
         <br>
