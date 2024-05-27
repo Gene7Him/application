@@ -1,9 +1,16 @@
 <body>
 
+
+<div class="p-5 mx-3">
+    <h4>FaisonIndustries LLC</h4>
+    <h4>FullStack Developer Internship</h4>
+    <h6>Seattle, WA, Paid, 12 Weeks</h6>
+</div>
+
 <?php
 $applicant = $this->get('applicant');
 ?>
-
+<div class="container">
 <h1>Summary</h1>
 <p>Name: <?= $applicant->getFname() ?> <?= $applicant->getLname() ?></p>
 <p>Email: <?= $applicant->getEmail() ?></p>
@@ -21,27 +28,14 @@ $applicant = $this->get('applicant');
 <h2>Mailing Lists</h2>
 <p>Job Announcements: <?= implode(', ', $applicant->getSelectionsJobs()) ?></p>
 <p>Verticals: <?= implode(', ', $applicant->getSelectionsVerticals()) ?></p>
+    </div>
 <?php endif; ?>
 
 
 
-<div class="p-5 mx-3">
-    <h4>FaisonIndustries LLC</h4>
-    <h4>FullStack Developer Internship</h4>
-    <h6>Seattle, WA, Paid, 12 Weeks</h6>
-</div>
-
-<div class="container">
-    <p>Name: {{ @SESSION.name }}</p>
-    <p>Email: {{ @SESSION.email }}</p>
-    <p>Phone: {{ @SESSION.Phone }}</p>
-    <p>Github Link: {{ @SESSION.git }}</p>
-    <p>Experience: {{ @SESSION.ex }}</p>
-    <p>Willing to relocate: {{ @SESSION.move }}</p>
-    <p>Mailing List: {{ @SESSION.code }}</p>
 
 
     <a href="{{ @BASE }}">Home page</a>
-</div>
+
 </body>
 </html>

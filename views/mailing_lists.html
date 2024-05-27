@@ -14,16 +14,20 @@
     <h1>Job Openings Mailing Lists</h1>
 
 
-    <form action="/process-mailing-lists" method="post" class="form-horizontal">
+    <form action="#" method="post" class="form-horizontal">
 
         <!-- get food -->
         <div class="form-group">
             <label class="col-sm-4 control-label">Software Development Jobs</label>
 
             <div class="col-sm-4">
-                <repeat group="{{ @code }}" value="{{ @code }}">
-                    <label><input type="checkbox" name="code" value="{{ @code }}"> {{ @code }}</label><br>
-                </repeat>
+                <!-- Job Announcements checkboxes -->
+                <label>
+                    <input type="checkbox" name="jobs[]" value="JavaScript"> JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="jobs[]" value="HTML"> HTML
+                </label>
 
 
             </div>
@@ -31,9 +35,13 @@
             <label class="col-sm-4 control-label">Industry Verticals</label>
 
             <div class="col-sm-4">
-                <repeat group="{{ @codes }}" value="{{ @codes }}">
-                    <label><input type="radio" name="codes" value="{{ @codes }}"> {{ @codes }}</label><br>
-                </repeat>
+                <!-- Verticals checkboxes -->
+                <label>
+                    <input type="checkbox" name="verticals[]" value="SaaS"> SaaS
+                </label>
+                <label>
+                    <input type="checkbox" name="verticals[]" value="Industrial tech"> Industrial tech
+                </label>
 
 
 

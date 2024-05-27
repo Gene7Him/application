@@ -3,7 +3,7 @@
  * Class Applicant
  * Represents a job applicant.
  */
-class Applicant
+class applicant
 {
     private $fname;
     private $lname;
