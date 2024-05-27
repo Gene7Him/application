@@ -6,10 +6,16 @@
  */
 class ApplicantController
 {
+    public function showHomePage($f3)
+    {
+        // Render the home page
+        echo Template::instance()->render('views/home.html');
+    }
+
     public function showPersonalInfoPage($f3)
     {
         // Render the personal information page
-        echo Template::instance()->render('personal_info.html');
+        echo Template::instance()->render('views/personal_info.html');
     }
 
     public function processPersonalInfo($f3)
@@ -49,7 +55,7 @@ class ApplicantController
     public function showMailingListsPage($f3)
     {
         // Render the mailing lists page
-        echo Template::instance()->render('mailing_lists.html');
+        echo Template::instance()->render('views/mailing_lists.html');
     }
 
     public function processMailingLists($f3)
@@ -73,7 +79,7 @@ class ApplicantController
     public function showExperiencePage($f3)
     {
         // Render the experience page
-        echo Template::instance()->render('experience.html');
+        echo Template::instance()->render('views/experience.html');
     }
 
     public function processExperience($f3)
@@ -102,7 +108,8 @@ class ApplicantController
         $applicant = $_SESSION['applicant'];
         $f3->set('applicant', $applicant);
 
-        echo Template::instance()->render('summary.html');
+        echo Template::instance()->render('views/summary.html');
     }
 }
+
 
