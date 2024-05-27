@@ -104,6 +104,22 @@ $f3->route('GET|POST /experience', function($f3) {
     echo $view->render('views/experience.html');
 });
 
+//  Summary
+$f3->route('GET /summary', function($f3) {
+
+    // Render the summary page
+    $applicant = $_SESSION['applicant'];
+    $f3->set('applicant', $applicant);
+
+
+    // Render a view page
+    $view = new Template();
+    echo $view->render('views/summary.html');
+
+    //var_dump ( $f3->get('SESSION') );
+    session_destroy();
+});
+
 
 
 $f3->route('GET|POST /mailing_lists', function($f3) {
