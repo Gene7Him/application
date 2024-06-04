@@ -117,7 +117,7 @@ $f3->route('GET /summary', function($f3) {
     echo $view->render('views/summary.html');
 
     //var_dump ( $f3->get('SESSION') );
-    session_destroy();
+   // session_destroy();
 });
 
 
@@ -131,8 +131,8 @@ $f3->route('GET|POST /mailing_lists', function($f3) {
         $applicant = $_SESSION['applicant'];
 
         if ($applicant instanceof Applicant_SubscribedToLists) {
-            $selectionsJobs = $_POST['jobs'] ?? [];
-            $selectionsVerticals = $_POST['verticals'] ?? [];
+            $selectionsJobs = isset($_POST['jobs']) ? $_POST['jobs'] : [];
+            $selectionsVerticals = isset($_POST['verticals']) ? $_POST['verticals'] : [];
 
             $applicant->setSelectionsJobs($selectionsJobs);
             $applicant->setSelectionsVerticals($selectionsVerticals);

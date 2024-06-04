@@ -12,6 +12,7 @@ $applicant = $this->get('applicant');
 ?>
 <div class="container">
 <h1>Summary</h1>
+    <!--
 <p>Name: <?= $applicant->getFname() ?> <?= $applicant->getLname() ?></p>
 <p>Email: <?= $applicant->getEmail() ?></p>
 <p>State: <?= $applicant->getState() ?></p>
@@ -20,6 +21,16 @@ $applicant = $this->get('applicant');
 <p>Experience: <?= $applicant->getExperience() ?></p>
 <p>Relocate: <?= $applicant->getRelocate() ?></p>
 <p>Bio: <?= $applicant->getBio() ?></p>
+    <p>{{@SESSION.applicant->getFname()}}</p>
+-->
+    <p>Name: {{@SESSION.applicant->getFname()}} {{@SESSION.applicant->getLname()}}</p>
+    <p>Email: {{@SESSION.applicant->getEmail()}}</p>
+    <p>Phone: {{@SESSION.applicant->getPhone()}}</p>
+    <p>GitHub: {{@SESSION.applicant->getGithub()}}</p>
+    <p>Experience: {{@SESSION.applicant->getExperience()}}</p>
+    <p>Relocate: {{@SESSION.applicant->getRelocate()}}</p>
+    <p>Bio: {{@SESSION.applicant->getBio()}}</p>
+
 <?php if ($applicant->getProfilePic()): ?>
 <p>Profile Picture: <img src="<?= $applicant->getProfilePic() ?>" alt="Profile Picture"></p>
 <?php endif; ?>
@@ -27,7 +38,9 @@ $applicant = $this->get('applicant');
 <?php if ($applicant instanceof Applicant_SubscribedToLists): ?>
 <h2>Mailing Lists</h2>
 <p>Job Announcements: <?= implode(', ', $applicant->getSelectionsJobs()) ?></p>
+<p>Job Announcements: {{@SESSION.Applicant_SubscribedToList->getSelectionsJobs()}}</p>
 <p>Verticals: <?= implode(', ', $applicant->getSelectionsVerticals()) ?></p>
+<p>Verticals: {{@SESSION.$applicant->getSelectionsVerticals()}}</p>
     </div>
 <?php endif; ?>
 

@@ -11,8 +11,8 @@ class applicant
     private $state;
     private $phone;
     private $github;
-    private $experience;
-    private $relocate;
+    private $experience = [];
+    private $relocate = [];
     private $bio;
     private $profilePic;
 
